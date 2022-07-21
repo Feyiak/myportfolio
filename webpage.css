@@ -158,7 +158,7 @@ main{
 
     width: 40%;
 
-    height:100vh ;
+    height:100vh;
 
     background-color:red ;
 
@@ -839,7 +839,8 @@ font-weight: 400;
 }
 .designpercent{
     border: 1px solid var(--pri-color);
-    width: 80%;
+    width: 100%;
+    margin-right: 10px;
 }
 .designskills{
 
@@ -847,7 +848,7 @@ font-weight: 400;
 
     grid-template-columns: repeat(2,auto);
 
-    gap: 10px 0;
+    gap: 10px 30px !important;
 
     margin-top: 20px;
 
@@ -1016,6 +1017,11 @@ margin-top: 20px;
     justify-content: center;
     align-items: center;
 }
+.coding-brand{
+    padding: 25px;
+border: 2px solid #68e0cf;
+border-radius: 50%;
+}
 
 .codingskill h3{
 
@@ -1032,7 +1038,6 @@ line-height: 23px;
 
 margin-top: 30px;
 
-width: 80%;
 
 font-size: 15px;
 }
@@ -1206,7 +1211,7 @@ font-size: 15px;
 
 label{
     position: absolute;
-    left: 75px;
+  
     font-size: 13px;
     color: #fff;
     font-weight: 800;
@@ -1294,15 +1299,7 @@ form{
     margin: 20px 0 0px 0;
 
 }
-.full-name-label{
-    bottom: 448px ;
-}
-.email-label{
-    bottom: 355px ;
-}
-.message-label{
-    bottom: 265px ;
-}
+
 #mobile-side-bar{
     width: 250px;
     height: 100vh;
@@ -1342,6 +1339,12 @@ aside button{
 }
 .side-menu .contact-btn{
     border: 2px solid white;
+}
+.aside-nav-btn-wrapper{
+    padding-top: 10px;
+}
+.aside-nav-btn{
+    color: #fff;
 }
 
 
@@ -1436,13 +1439,11 @@ display: none;
 .designskill p{
     width: 100%;
 }
-.percent {
-    padding-left: 150px;}
 .languagekills{
     grid-template-columns: repeat(1,auto);
 }
 .codingskills{
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(1,auto);
 
 }
 .clients{
@@ -1467,7 +1468,10 @@ display: none;
     gap: 70px;
 
 }
-.full-name-label{
+.codingskillWrapper{
+    width: 100%;
+}
+/* .full-name-label{
     bottom: 6.6% !important;
 }
 .email-label{
@@ -1475,7 +1479,7 @@ display: none;
 }
 .message-label{
     bottom: 5.3% !important;
-}
+} */
 .experience p {
     line-height: 21px;
     margin-top: 15px;
@@ -1523,13 +1527,29 @@ section header{
 .service-item{
     padding-right: 0;
 }
+.experiences{
+    grid-template-columns: auto;
+}
+.experience-header
+{
+    justify-content: center;
+}
+.educations{
+    grid-template-columns: auto;
+}
+.education-header{
+    justify-content: center;
+}
+.education p{
+    width: 100%;
+}
 }
 
 
 
 
 /* ---------------------DESKTOP---------------- */
-@media  screen and (min-width : 769px) {
+@media  screen and (min-width : 800px) {
     .side-bar-btn{
         display: none;
     }
